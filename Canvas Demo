@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Canvas Demo</title>
+</head>
+<body>
+<canvas width='200' height='200' id='canvas'> This won't show. </canvas>
+</body>
+<script>
+  var canvas = document.getElementById('canvas');
+  var context = canvas.getContext('2d');
+
+
+  var canvas = document.getElementById('canvas');
+  var context = canvas.getContext('2d');
+
+  context.beginPath();
+  context.rect(0,0,200,66);
+  context.fillStyle = '#ffff99';
+  context.fill();
+
+  context.beginPath();
+  context.rect(0,66,200,66);
+  context.fillStyle = '#ffa64d';
+  context.fill();
+
+  context.beginPath();
+  context.rect(0,132,200,68);
+  context.fillStyle = '#ff3300';
+  context.fill();
+
+
+  context.beginPath();
+  context.arc(100, 200, 50, 0, Math.PI, true);
+  context.fillStyle = '#ffe066'
+  context.fill();
+
+  context.beginPath();
+  context.arc(100, 200, 30, 0, Math.PI, true);
+  context.fillStyle = '#ffd633'
+  context.fill();
+
+  context.beginPath();
+  context.arc(100, 200, 15, 0, Math.PI, true);
+  context.fillStyle = '#ffcc00'
+  context.fill();
+
+
+  context.beginPath();
+  context.moveTo(100, 140);
+  context.lineTo(100, 55);
+  context.strokeStyle = '#ffcc00';
+  context.lineWidth= 7;
+  context.stroke();
+
+  context.beginPath();
+  context.moveTo(68, 148);
+  context.lineTo(28, 73);
+  context.strokeStyle = '#ffcc00';
+  context.lineWidth= 7;
+  context.stroke();
+
+  context.beginPath();
+  context.moveTo(132, 148);
+  context.lineTo(172, 73);
+  context.strokeStyle = '#ffcc00';
+  context.lineWidth= 7;
+  context.stroke();
+
+  context.beginPath();
+  context.moveTo(45, 171);
+  context.lineTo(-15, 145);
+  context.strokeStyle = '#ffcc00';
+  context.lineWidth= 7;
+  context.stroke();
+
+  context.beginPath();
+  context.moveTo(155, 171);
+  context.lineTo(215, 145);
+  context.strokeStyle = '#ffcc00';
+  context.lineWidth= 7;
+  context.stroke();
+
+  context.beginPath();
+  context.moveTo(33, 196);
+  context.lineTo(0, 194);
+  context.strokeStyle = '#ffcc00';
+  context.lineWidth= 7;
+  context.stroke();
+
+  context.beginPath();
+  context.moveTo(167, 196);
+  context.lineTo(200, 194);
+  context.strokeStyle = '#ffcc00';
+  context.lineWidth= 7;
+  context.stroke();
+
+
+  context.font = '50px Winter Calligraphy'; //sets CSS properties for our font
+  context.lineWidth = 2;
+  context.strokeStyle = '#000000';
+  context.strokeText('sunset', 57, 43);
+
+
+/*
+  //rect stuff
+  context.rect(100,100,50,75);
+  context.fillStyle = '#0000ff';
+  context.fill();
+
+  //give border
+  context.strokeStyle = '#ff00ff';
+  context.lineWidth = 5;
+  context.stroke();
+
+  //make line
+  context.beginPath();
+  context.moveTo(25,15);
+  context.lineTo(100,100);
+  context.strokeStyle = '#0000ff';
+  context.stroke();
+
+  //make circle
+  context.beginPath();  //tells the canvas we are about to draw
+  //plans an arc based on (x, y, radius, starting angle, finishing angle,
+  //clockwise (false) or counter-clockwise(true))
+  context.arc(0, 0, 50, 0, Math.PI*2, false);
+  context.fillStyle = '#50ff00'
+  context.fill();
+
+  //make a half-cicle
+  context.beginPath();
+  context.arc(150, 50, 20, 0, Math.PI, false);
+  context.fillStyle = '#50ff00'
+  context.fill();
+
+  //Drawing Text
+  context.font = '40px Helvetica'; //sets CSS properties fro our font
+  context.lineWidth = 2;
+  context.strokeStyle = '#000000';
+  context.strokeText('Hello', 20, 30);
+  context.fillStyle = '#33aa00'
+  context.fillText('Wow', 10, 100);
+
+  */
+
+</script>
+</html>
